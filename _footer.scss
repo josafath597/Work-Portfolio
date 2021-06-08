@@ -1,0 +1,77 @@
+footer{
+    .contacto{
+        padding:60px 0;
+        .titulo{
+            font-size: 34px;
+            line-height: 34px;
+            margin-bottom: 40px;
+            font-weight: 300;
+            color:#3895ea;
+            text-align: center;
+        }
+        .formulario{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            input[type="text"], input[type="email"], textarea{
+                border:2px solid #cecece;
+                border-radius: 5px;
+                padding: 15px 20px;
+                font-size: 20px;
+                color: #a4a4a4;
+                &:focus{
+                    border:2px solid #3895ea;
+                }
+            }
+            input[type="text"], input[type="email"]{
+                box-sizing: border-box;
+                width: 49%;
+                margin-bottom: 15px;
+            }
+            textarea{
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                min-width: 100%;
+                max-width: 100%;
+                min-height: 100px;
+                max-height: 300px;
+            }
+            .boton{
+                margin: 25px auto;
+                background: #3895ea;
+                color: #fff;
+                border:none;
+                border-radius: 5px;
+                padding: 15px 40px;
+                cursor:pointer;
+                &:hover{
+                    background: #387bea;
+                }
+            }
+        }
+    }
+    .redes-sociales{
+        background: #1e2b38;
+        padding: 80px 0;
+        a{
+            color: #fff;
+            text-align: center;
+            width: 100px;
+            font-size: 30px;
+            padding: 15px 0;
+            display: block;
+            margin: auto 20px;
+            border-radius: 3px;
+        }
+        .contenedor{
+            display: flex;
+            justify-content: center;
+            .twitter:hover{background: #1da1f2;}
+            .facebook:hover{background: #3b5998;}
+            .youtube:hover{background: #ff0000;}
+            .github:hover{background: #6cc644;}
+            .instagram:hover{background: #ffdc80;}
+        }
+    }
+}
